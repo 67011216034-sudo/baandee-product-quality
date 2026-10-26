@@ -33,7 +33,7 @@ AppTest สร้างฐานข้อมูลชั่วคราวขอ
 
 บัญชีบน Streamlit Community Cloud ใช้สำหรับผู้ดูแลที่จะ deploy แอปเท่านั้น หากจะ deploy ต้องมี repository ที่บัญชีนั้นเข้าถึงได้ และเลือก main file เป็น `streamlit_app.py` ในโฟลเดอร์โครงการ พร้อม requirements.txt และ .streamlit/config.toml
 
-ยังไม่ได้ deploy ไป Community Cloud หรืออัปโหลด GitHub การเตรียมไฟล์และการแชร์ tunnel ไม่ใช่การ deploy ขึ้น Community Cloud
+อัปโหลด GitHub แล้วที่ https://github.com/67011216034-sudo/baandee-product-quality (main) แต่ยังไม่ได้ยืนยัน deployment บน Community Cloud การเตรียมไฟล์และการแชร์ tunnel ไม่ใช่การ deploy ขึ้น Community Cloud
 
 ## ข้อจำกัดการเก็บข้อมูล
 
