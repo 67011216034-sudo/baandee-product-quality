@@ -1,0 +1,7 @@
+product_id,product_name,category,unit_price_thb
+DEMO-001,,Kitchen,199
+DEMO-002,Demo negative price,Storage,-10
+DEMO-003,Demo duplicate A,Bathroom,299
+DEMO-003,Demo duplicate B,Bathroom,299
+DEMO-004,Demo unknown category,Unknown,199
+DEMO-005,Demo expensive item,Bedding,9000

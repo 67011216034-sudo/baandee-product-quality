@@ -1,0 +1,20 @@
+{
+  "version": "1.0",
+  "source": "Team-designed synthetic product quality policy; not official BaanDee policy",
+  "categories": [
+    "Bathroom",
+    "Kitchen",
+    "Bedding",
+    "Storage"
+  ],
+  "aliases": {
+    "bathroom": "Bathroom",
+    "kitchen": "Kitchen",
+    "bedding": "Bedding",
+    "storage": "Storage"
+  },
+  "price_review_above": 5000,
+  "ambiguous_categories": [
+    "Bed room"
+  ]
+}

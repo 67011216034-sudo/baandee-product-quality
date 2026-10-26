@@ -1,0 +1,15 @@
+﻿product_id,product_name,category,unit_price_thb,source,status,issues
+SKU-0023,BaanDee Item 23,Bed room,199,original,review,UNKNOWN_CATEGORY
+SKU-0046,BaanDee Item 46,Bed room,129,original,review,UNKNOWN_CATEGORY
+SKU-0069,BaanDee Item 69,Bed room,799,original,review,UNKNOWN_CATEGORY
+SKU-BD-220,Cooling Cotton Sheet Set,Bed room,1590,original,review,UNKNOWN_CATEGORY
+DEMO-001,,Kitchen,199,synthetic-demo,error,MISSING_NAME
+DEMO-002,Demo negative price,Storage,-10,synthetic-demo,error,INVALID_PRICE
+DEMO-003,Demo duplicate A,Bathroom,299,synthetic-demo,error,DUPLICATE_ID
+DEMO-003,Demo duplicate B,Bathroom,299,synthetic-demo,error,DUPLICATE_ID
+DEMO-004,Demo unknown category,Unknown,199,synthetic-demo,review,UNKNOWN_CATEGORY
+DEMO-005,Demo expensive item,Bedding,9000,synthetic-demo,review,PRICE_REVIEW
+5555,ควยปลอม,Kitchen,500,user-created,review,ID_FORMAT
+4444,บ้านบอล,Bedding,150000000,user-created,review,ID_FORMAT; PRICE_REVIEW
+6515,บ้านผีสิง,Bathroom,9999999,user-created,review,ID_FORMAT; PRICE_REVIEW
+644,้ด้เ้ดก,ดิ,ดกิด,user-created,error,ID_FORMAT; UNKNOWN_CATEGORY; INVALID_PRICE

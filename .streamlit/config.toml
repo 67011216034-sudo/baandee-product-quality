@@ -1,0 +1,18 @@
+[global]
+developmentMode = false
+
+[theme]
+primaryColor = "#7660d7"
+backgroundColor = "#f8f7fc"
+secondaryBackgroundColor = "#f0ecf8"
+textColor = "#39334f"
+font = "sans serif"
+baseFontSize = 18
+
+[server]
+headless = true
+enableXsrfProtection = true
+enableCORS = true
+
+[browser]
+gatherUsageStats = false

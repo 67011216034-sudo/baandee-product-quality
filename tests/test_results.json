@@ -1,0 +1,208 @@
+[
+  {
+    "case": "safe correction and audit",
+    "input": "storage",
+    "expected": [
+      "Storage",
+      "storage"
+    ],
+    "actual": [
+      "Storage",
+      "storage"
+    ],
+    "result": "PASS"
+  },
+  {
+    "case": "ambiguous category is never guessed",
+    "input": "Bed room",
+    "expected": true,
+    "actual": true,
+    "result": "PASS"
+  },
+  {
+    "case": "anonymous API blocked",
+    "input": "GET products without session",
+    "expected": 401,
+    "actual": 401,
+    "result": "PASS"
+  },
+  {
+    "case": "registration creates session",
+    "input": "new synthetic account",
+    "expected": true,
+    "actual": true,
+    "result": "PASS"
+  },
+  {
+    "case": "API success",
+    "input": "GET /api/products",
+    "expected": 88,
+    "actual": 88,
+    "result": "PASS"
+  },
+  {
+    "case": "API not found",
+    "input": "GET /api/missing",
+    "expected": 404,
+    "actual": 404,
+    "result": "PASS"
+  },
+  {
+    "case": "API update",
+    "input": "PUT saved record",
+    "expected": "API updated",
+    "actual": "API updated",
+    "result": "PASS"
+  },
+  {
+    "case": "HTTPS same host reaches input validation",
+    "input": "HTTPS Origin on tunnel host",
+    "expected": 400,
+    "actual": 400,
+    "result": "PASS"
+  },
+  {
+    "case": "foreign origin blocked",
+    "input": "Origin https://other.example",
+    "expected": 403,
+    "actual": 403,
+    "result": "PASS"
+  },
+  {
+    "case": "logout revokes access",
+    "input": "GET after logout",
+    "expected": 401,
+    "actual": 401,
+    "result": "PASS"
+  },
+  {
+    "case": "incorrect password rejected",
+    "input": "synthetic incorrect password",
+    "expected": 401,
+    "actual": 401,
+    "result": "PASS"
+  },
+  {
+    "case": "login existing account",
+    "input": "correct synthetic credentials",
+    "expected": "api_tester",
+    "actual": "api_tester",
+    "result": "PASS"
+  },
+  {
+    "case": "profile update uses session identity",
+    "input": "payload tries user_id 999",
+    "expected": [
+      "API profile",
+      "api_tester"
+    ],
+    "actual": [
+      "API profile",
+      "api_tester"
+    ],
+    "result": "PASS"
+  },
+  {
+    "case": "account font setting persisted",
+    "input": "PUT extra-large",
+    "expected": "extra-large",
+    "actual": "extra-large",
+    "result": "PASS"
+  },
+  {
+    "case": "profile returned on next request",
+    "input": "GET me",
+    "expected": "API profile",
+    "actual": "API profile",
+    "result": "PASS"
+  },
+  {
+    "case": "service unavailable",
+    "input": "GET after server stopped",
+    "expected": true,
+    "actual": true,
+    "result": "PASS"
+  },
+  {
+    "case": "stale update rejected",
+    "input": "same revision twice",
+    "expected": true,
+    "actual": true,
+    "result": "PASS"
+  },
+  {
+    "case": "duplicate ID quarantined",
+    "input": "DEMO-003",
+    "expected": [
+      "error",
+      "error"
+    ],
+    "actual": [
+      "error",
+      "error"
+    ],
+    "result": "PASS"
+  },
+  {
+    "case": "export separates unresolved records",
+    "input": "normalize then export",
+    "expected": [
+      78,
+      10,
+      false
+    ],
+    "actual": [
+      78,
+      10,
+      false
+    ],
+    "result": "PASS"
+  },
+  {
+    "case": "before after correction evidence",
+    "input": "5 category aliases",
+    "expected": 5,
+    "actual": 5,
+    "result": "PASS"
+  },
+  {
+    "case": "negative price",
+    "input": "-10",
+    "expected": true,
+    "actual": true,
+    "result": "PASS"
+  },
+  {
+    "case": "missing name",
+    "input": "empty product_name",
+    "expected": true,
+    "actual": true,
+    "result": "PASS"
+  },
+  {
+    "case": "create update reopen",
+    "input": "new SKU then rename",
+    "expected": [
+      "Updated",
+      2
+    ],
+    "actual": [
+      "Updated",
+      2
+    ],
+    "result": "PASS"
+  },
+  {
+    "case": "original and synthetic sources",
+    "input": "initial database",
+    "expected": [
+      82,
+      6
+    ],
+    "actual": [
+      82,
+      6
+    ],
+    "result": "PASS"
+  }
+]

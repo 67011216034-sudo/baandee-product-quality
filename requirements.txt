@@ -1,0 +1,2 @@
+# Streamlit UI; app.py REST API itself uses only the Python standard library.
+streamlit==1.66.1

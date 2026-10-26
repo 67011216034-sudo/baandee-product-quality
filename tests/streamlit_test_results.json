@@ -1,0 +1,86 @@
+[
+  {
+    "case": "create and edit persist through API",
+    "input": "199 then 249",
+    "expected": "249",
+    "actual": "249",
+    "result": "PASS"
+  },
+  {
+    "case": "audit records update",
+    "input": "save reason",
+    "expected": true,
+    "actual": true,
+    "result": "PASS"
+  },
+  {
+    "case": "stale Streamlit form cannot overwrite update",
+    "input": "299 submitted after external 349",
+    "expected": "349",
+    "actual": "349",
+    "result": "PASS"
+  },
+  {
+    "case": "invalid credentials shown",
+    "input": "unknown synthetic user",
+    "expected": true,
+    "actual": true,
+    "result": "PASS"
+  },
+  {
+    "case": "API not found handled",
+    "input": "GET unknown endpoint",
+    "expected": 404,
+    "actual": 404,
+    "result": "PASS"
+  },
+  {
+    "case": "profile persists through REST API",
+    "input": "profile save",
+    "expected": "Synthetic Quality Team",
+    "actual": "Synthetic Quality Team",
+    "result": "PASS"
+  },
+  {
+    "case": "font preference persists",
+    "input": "extra-large",
+    "expected": "extra-large",
+    "actual": "extra-large",
+    "result": "PASS"
+  },
+  {
+    "case": "sessions isolated",
+    "input": "new client without login",
+    "expected": 401,
+    "actual": 401,
+    "result": "PASS"
+  },
+  {
+    "case": "native Streamlit signup",
+    "input": "synthetic account",
+    "expected": "คุณภาพข้อมูลสินค้า",
+    "actual": "คุณภาพข้อมูลสินค้า",
+    "result": "PASS"
+  },
+  {
+    "case": "logout clears session",
+    "input": "logout",
+    "expected": false,
+    "actual": false,
+    "result": "PASS"
+  },
+  {
+    "case": "login existing account",
+    "input": "synthetic credentials",
+    "expected": "streamlit_auth",
+    "actual": "streamlit_auth",
+    "result": "PASS"
+  },
+  {
+    "case": "unavailable service handled",
+    "input": "closed port",
+    "expected": 503,
+    "actual": 503,
+    "result": "PASS"
+  }
+]

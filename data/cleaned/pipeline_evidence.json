@@ -1,0 +1,570 @@
+{
+  "snapshot_type": "reproducible pipeline from original + synthetic fixtures; separate from live app edits",
+  "generated_at": "2026-10-25T17:10:18.292652+00:00",
+  "policy_version": "1.0",
+  "original_sha256": "2d2a12e8c33a829a4cf909685cd8c1feedf7f8929289f01b09751fd96cd81cd5",
+  "total": 88,
+  "status_before": {
+    "pass": 73,
+    "warning": 5,
+    "review": 6,
+    "error": 4
+  },
+  "status_after": {
+    "pass": 78,
+    "review": 6,
+    "error": 4
+  },
+  "issues_before": {
+    "CATEGORY_ALIAS": 5,
+    "UNKNOWN_CATEGORY": 5,
+    "MISSING_NAME": 1,
+    "INVALID_PRICE": 1,
+    "DUPLICATE_ID": 2,
+    "PRICE_REVIEW": 1
+  },
+  "issues_after": {
+    "UNKNOWN_CATEGORY": 5,
+    "MISSING_NAME": 1,
+    "INVALID_PRICE": 1,
+    "DUPLICATE_ID": 2,
+    "PRICE_REVIEW": 1
+  },
+  "corrected_rows": 5,
+  "exported": {
+    "clean": 78,
+    "quarantine": 10
+  },
+  "evidence": [
+    {
+      "row_id": 19,
+      "product_id": "SKU-0019",
+      "source": "original",
+      "before": {
+        "product_id": "SKU-0019",
+        "product_name": "BaanDee Item 19",
+        "category": "storage",
+        "unit_price_thb": "129"
+      },
+      "after": {
+        "product_id": "SKU-0019",
+        "product_name": "BaanDee Item 19",
+        "category": "Storage",
+        "unit_price_thb": "129"
+      },
+      "detected_before": [
+        {
+          "code": "CATEGORY_ALIAS",
+          "severity": "warning",
+          "field": "category",
+          "message": "หมวดหมู่ต่างรูปแบบ แก้ได้ตามตารางเทียบ",
+          "suggestion": "Storage"
+        }
+      ],
+      "remaining_after": [],
+      "status_before": "warning",
+      "status_after": "pass",
+      "action": "safe rule correction; see correction_log.json"
+    },
+    {
+      "row_id": 23,
+      "product_id": "SKU-0023",
+      "source": "original",
+      "before": {
+        "product_id": "SKU-0023",
+        "product_name": "BaanDee Item 23",
+        "category": "Bed room",
+        "unit_price_thb": "199"
+      },
+      "after": {
+        "product_id": "SKU-0023",
+        "product_name": "BaanDee Item 23",
+        "category": "Bed room",
+        "unit_price_thb": "199"
+      },
+      "detected_before": [
+        {
+          "code": "UNKNOWN_CATEGORY",
+          "severity": "review",
+          "field": "category",
+          "message": "ไม่พบหมวดหมู่ในมาตรฐาน ต้องให้คนยืนยัน",
+          "suggestion": null
+        }
+      ],
+      "remaining_after": [
+        {
+          "code": "UNKNOWN_CATEGORY",
+          "severity": "review",
+          "field": "category",
+          "message": "ไม่พบหมวดหมู่ในมาตรฐาน ต้องให้คนยืนยัน",
+          "suggestion": null
+        }
+      ],
+      "status_before": "review",
+      "status_after": "review",
+      "action": "quarantine for human review; no unsupported correction"
+    },
+    {
+      "row_id": 38,
+      "product_id": "SKU-0038",
+      "source": "original",
+      "before": {
+        "product_id": "SKU-0038",
+        "product_name": "BaanDee Item 38",
+        "category": "kitchen",
+        "unit_price_thb": "499"
+      },
+      "after": {
+        "product_id": "SKU-0038",
+        "product_name": "BaanDee Item 38",
+        "category": "Kitchen",
+        "unit_price_thb": "499"
+      },
+      "detected_before": [
+        {
+          "code": "CATEGORY_ALIAS",
+          "severity": "warning",
+          "field": "category",
+          "message": "หมวดหมู่ต่างรูปแบบ แก้ได้ตามตารางเทียบ",
+          "suggestion": "Kitchen"
+        }
+      ],
+      "remaining_after": [],
+      "status_before": "warning",
+      "status_after": "pass",
+      "action": "safe rule correction; see correction_log.json"
+    },
+    {
+      "row_id": 46,
+      "product_id": "SKU-0046",
+      "source": "original",
+      "before": {
+        "product_id": "SKU-0046",
+        "product_name": "BaanDee Item 46",
+        "category": "Bed room",
+        "unit_price_thb": "129"
+      },
+      "after": {
+        "product_id": "SKU-0046",
+        "product_name": "BaanDee Item 46",
+        "category": "Bed room",
+        "unit_price_thb": "129"
+      },
+      "detected_before": [
+        {
+          "code": "UNKNOWN_CATEGORY",
+          "severity": "review",
+          "field": "category",
+          "message": "ไม่พบหมวดหมู่ในมาตรฐาน ต้องให้คนยืนยัน",
+          "suggestion": null
+        }
+      ],
+      "remaining_after": [
+        {
+          "code": "UNKNOWN_CATEGORY",
+          "severity": "review",
+          "field": "category",
+          "message": "ไม่พบหมวดหมู่ในมาตรฐาน ต้องให้คนยืนยัน",
+          "suggestion": null
+        }
+      ],
+      "status_before": "review",
+      "status_after": "review",
+      "action": "quarantine for human review; no unsupported correction"
+    },
+    {
+      "row_id": 57,
+      "product_id": "SKU-0057",
+      "source": "original",
+      "before": {
+        "product_id": "SKU-0057",
+        "product_name": "BaanDee Item 57",
+        "category": "bedding",
+        "unit_price_thb": "299"
+      },
+      "after": {
+        "product_id": "SKU-0057",
+        "product_name": "BaanDee Item 57",
+        "category": "Bedding",
+        "unit_price_thb": "299"
+      },
+      "detected_before": [
+        {
+          "code": "CATEGORY_ALIAS",
+          "severity": "warning",
+          "field": "category",
+          "message": "หมวดหมู่ต่างรูปแบบ แก้ได้ตามตารางเทียบ",
+          "suggestion": "Bedding"
+        }
+      ],
+      "remaining_after": [],
+      "status_before": "warning",
+      "status_after": "pass",
+      "action": "safe rule correction; see correction_log.json"
+    },
+    {
+      "row_id": 69,
+      "product_id": "SKU-0069",
+      "source": "original",
+      "before": {
+        "product_id": "SKU-0069",
+        "product_name": "BaanDee Item 69",
+        "category": "Bed room",
+        "unit_price_thb": "799"
+      },
+      "after": {
+        "product_id": "SKU-0069",
+        "product_name": "BaanDee Item 69",
+        "category": "Bed room",
+        "unit_price_thb": "799"
+      },
+      "detected_before": [
+        {
+          "code": "UNKNOWN_CATEGORY",
+          "severity": "review",
+          "field": "category",
+          "message": "ไม่พบหมวดหมู่ในมาตรฐาน ต้องให้คนยืนยัน",
+          "suggestion": null
+        }
+      ],
+      "remaining_after": [
+        {
+          "code": "UNKNOWN_CATEGORY",
+          "severity": "review",
+          "field": "category",
+          "message": "ไม่พบหมวดหมู่ในมาตรฐาน ต้องให้คนยืนยัน",
+          "suggestion": null
+        }
+      ],
+      "status_before": "review",
+      "status_after": "review",
+      "action": "quarantine for human review; no unsupported correction"
+    },
+    {
+      "row_id": 76,
+      "product_id": "SKU-0076",
+      "source": "original",
+      "before": {
+        "product_id": "SKU-0076",
+        "product_name": "BaanDee Item 76",
+        "category": "bedding",
+        "unit_price_thb": "499"
+      },
+      "after": {
+        "product_id": "SKU-0076",
+        "product_name": "BaanDee Item 76",
+        "category": "Bedding",
+        "unit_price_thb": "499"
+      },
+      "detected_before": [
+        {
+          "code": "CATEGORY_ALIAS",
+          "severity": "warning",
+          "field": "category",
+          "message": "หมวดหมู่ต่างรูปแบบ แก้ได้ตามตารางเทียบ",
+          "suggestion": "Bedding"
+        }
+      ],
+      "remaining_after": [],
+      "status_before": "warning",
+      "status_after": "pass",
+      "action": "safe rule correction; see correction_log.json"
+    },
+    {
+      "row_id": 81,
+      "product_id": "SKU-KT-104",
+      "source": "original",
+      "before": {
+        "product_id": "SKU-KT-104",
+        "product_name": "Compact Rice Cooker",
+        "category": "kitchen",
+        "unit_price_thb": "1290"
+      },
+      "after": {
+        "product_id": "SKU-KT-104",
+        "product_name": "Compact Rice Cooker",
+        "category": "Kitchen",
+        "unit_price_thb": "1290"
+      },
+      "detected_before": [
+        {
+          "code": "CATEGORY_ALIAS",
+          "severity": "warning",
+          "field": "category",
+          "message": "หมวดหมู่ต่างรูปแบบ แก้ได้ตามตารางเทียบ",
+          "suggestion": "Kitchen"
+        }
+      ],
+      "remaining_after": [],
+      "status_before": "warning",
+      "status_after": "pass",
+      "action": "safe rule correction; see correction_log.json"
+    },
+    {
+      "row_id": 82,
+      "product_id": "SKU-BD-220",
+      "source": "original",
+      "before": {
+        "product_id": "SKU-BD-220",
+        "product_name": "Cooling Cotton Sheet Set",
+        "category": "Bed room",
+        "unit_price_thb": "1590"
+      },
+      "after": {
+        "product_id": "SKU-BD-220",
+        "product_name": "Cooling Cotton Sheet Set",
+        "category": "Bed room",
+        "unit_price_thb": "1590"
+      },
+      "detected_before": [
+        {
+          "code": "UNKNOWN_CATEGORY",
+          "severity": "review",
+          "field": "category",
+          "message": "ไม่พบหมวดหมู่ในมาตรฐาน ต้องให้คนยืนยัน",
+          "suggestion": null
+        }
+      ],
+      "remaining_after": [
+        {
+          "code": "UNKNOWN_CATEGORY",
+          "severity": "review",
+          "field": "category",
+          "message": "ไม่พบหมวดหมู่ในมาตรฐาน ต้องให้คนยืนยัน",
+          "suggestion": null
+        }
+      ],
+      "status_before": "review",
+      "status_after": "review",
+      "action": "quarantine for human review; no unsupported correction"
+    },
+    {
+      "row_id": 83,
+      "product_id": "DEMO-001",
+      "source": "synthetic-demo",
+      "before": {
+        "product_id": "DEMO-001",
+        "product_name": "",
+        "category": "Kitchen",
+        "unit_price_thb": "199"
+      },
+      "after": {
+        "product_id": "DEMO-001",
+        "product_name": "",
+        "category": "Kitchen",
+        "unit_price_thb": "199"
+      },
+      "detected_before": [
+        {
+          "code": "MISSING_NAME",
+          "severity": "error",
+          "field": "product_name",
+          "message": "ไม่มีชื่อสินค้า ไม่สามารถเดาแทนได้",
+          "suggestion": null
+        }
+      ],
+      "remaining_after": [
+        {
+          "code": "MISSING_NAME",
+          "severity": "error",
+          "field": "product_name",
+          "message": "ไม่มีชื่อสินค้า ไม่สามารถเดาแทนได้",
+          "suggestion": null
+        }
+      ],
+      "status_before": "error",
+      "status_after": "error",
+      "action": "quarantine for human review; no unsupported correction"
+    },
+    {
+      "row_id": 84,
+      "product_id": "DEMO-002",
+      "source": "synthetic-demo",
+      "before": {
+        "product_id": "DEMO-002",
+        "product_name": "Demo negative price",
+        "category": "Storage",
+        "unit_price_thb": "-10"
+      },
+      "after": {
+        "product_id": "DEMO-002",
+        "product_name": "Demo negative price",
+        "category": "Storage",
+        "unit_price_thb": "-10"
+      },
+      "detected_before": [
+        {
+          "code": "INVALID_PRICE",
+          "severity": "error",
+          "field": "unit_price_thb",
+          "message": "ราคาต้องเป็นตัวเลขที่มากกว่า 0",
+          "suggestion": null
+        }
+      ],
+      "remaining_after": [
+        {
+          "code": "INVALID_PRICE",
+          "severity": "error",
+          "field": "unit_price_thb",
+          "message": "ราคาต้องเป็นตัวเลขที่มากกว่า 0",
+          "suggestion": null
+        }
+      ],
+      "status_before": "error",
+      "status_after": "error",
+      "action": "quarantine for human review; no unsupported correction"
+    },
+    {
+      "row_id": 85,
+      "product_id": "DEMO-003",
+      "source": "synthetic-demo",
+      "before": {
+        "product_id": "DEMO-003",
+        "product_name": "Demo duplicate A",
+        "category": "Bathroom",
+        "unit_price_thb": "299"
+      },
+      "after": {
+        "product_id": "DEMO-003",
+        "product_name": "Demo duplicate A",
+        "category": "Bathroom",
+        "unit_price_thb": "299"
+      },
+      "detected_before": [
+        {
+          "code": "DUPLICATE_ID",
+          "severity": "error",
+          "field": "product_id",
+          "message": "รหัสซ้ำ ต้องให้คนตรวจสอบ ห้ามรวมรายการอัตโนมัติ",
+          "suggestion": null
+        }
+      ],
+      "remaining_after": [
+        {
+          "code": "DUPLICATE_ID",
+          "severity": "error",
+          "field": "product_id",
+          "message": "รหัสซ้ำ ต้องให้คนตรวจสอบ ห้ามรวมรายการอัตโนมัติ",
+          "suggestion": null
+        }
+      ],
+      "status_before": "error",
+      "status_after": "error",
+      "action": "quarantine for human review; no unsupported correction"
+    },
+    {
+      "row_id": 86,
+      "product_id": "DEMO-003",
+      "source": "synthetic-demo",
+      "before": {
+        "product_id": "DEMO-003",
+        "product_name": "Demo duplicate B",
+        "category": "Bathroom",
+        "unit_price_thb": "299"
+      },
+      "after": {
+        "product_id": "DEMO-003",
+        "product_name": "Demo duplicate B",
+        "category": "Bathroom",
+        "unit_price_thb": "299"
+      },
+      "detected_before": [
+        {
+          "code": "DUPLICATE_ID",
+          "severity": "error",
+          "field": "product_id",
+          "message": "รหัสซ้ำ ต้องให้คนตรวจสอบ ห้ามรวมรายการอัตโนมัติ",
+          "suggestion": null
+        }
+      ],
+      "remaining_after": [
+        {
+          "code": "DUPLICATE_ID",
+          "severity": "error",
+          "field": "product_id",
+          "message": "รหัสซ้ำ ต้องให้คนตรวจสอบ ห้ามรวมรายการอัตโนมัติ",
+          "suggestion": null
+        }
+      ],
+      "status_before": "error",
+      "status_after": "error",
+      "action": "quarantine for human review; no unsupported correction"
+    },
+    {
+      "row_id": 87,
+      "product_id": "DEMO-004",
+      "source": "synthetic-demo",
+      "before": {
+        "product_id": "DEMO-004",
+        "product_name": "Demo unknown category",
+        "category": "Unknown",
+        "unit_price_thb": "199"
+      },
+      "after": {
+        "product_id": "DEMO-004",
+        "product_name": "Demo unknown category",
+        "category": "Unknown",
+        "unit_price_thb": "199"
+      },
+      "detected_before": [
+        {
+          "code": "UNKNOWN_CATEGORY",
+          "severity": "review",
+          "field": "category",
+          "message": "ไม่พบหมวดหมู่ในมาตรฐาน ต้องให้คนยืนยัน",
+          "suggestion": null
+        }
+      ],
+      "remaining_after": [
+        {
+          "code": "UNKNOWN_CATEGORY",
+          "severity": "review",
+          "field": "category",
+          "message": "ไม่พบหมวดหมู่ในมาตรฐาน ต้องให้คนยืนยัน",
+          "suggestion": null
+        }
+      ],
+      "status_before": "review",
+      "status_after": "review",
+      "action": "quarantine for human review; no unsupported correction"
+    },
+    {
+      "row_id": 88,
+      "product_id": "DEMO-005",
+      "source": "synthetic-demo",
+      "before": {
+        "product_id": "DEMO-005",
+        "product_name": "Demo expensive item",
+        "category": "Bedding",
+        "unit_price_thb": "9000"
+      },
+      "after": {
+        "product_id": "DEMO-005",
+        "product_name": "Demo expensive item",
+        "category": "Bedding",
+        "unit_price_thb": "9000"
+      },
+      "detected_before": [
+        {
+          "code": "PRICE_REVIEW",
+          "severity": "review",
+          "field": "unit_price_thb",
+          "message": "ราคาเกินเกณฑ์ทบทวน ยังสรุปไม่ได้ว่าผิด",
+          "suggestion": null
+        }
+      ],
+      "remaining_after": [
+        {
+          "code": "PRICE_REVIEW",
+          "severity": "review",
+          "field": "unit_price_thb",
+          "message": "ราคาเกินเกณฑ์ทบทวน ยังสรุปไม่ได้ว่าผิด",
+          "suggestion": null
+        }
+      ],
+      "status_before": "review",
+      "status_after": "review",
+      "action": "quarantine for human review; no unsupported correction"
+    }
+  ]
+}
