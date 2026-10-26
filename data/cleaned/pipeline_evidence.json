@@ -1,6 +1,6 @@
 {
   "snapshot_type": "reproducible pipeline from original + synthetic fixtures; separate from live app edits",
-  "generated_at": "2026-10-25T17:10:18.292652+00:00",
+  "generated_at": "2026-10-26T09:17:24.801033+00:00",
   "policy_version": "1.0",
   "original_sha256": "2d2a12e8c33a829a4cf909685cd8c1feedf7f8929289f01b09751fd96cd81cd5",
   "total": 88,

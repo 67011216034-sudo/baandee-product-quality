@@ -1,83 +1,47 @@
 [
   {
-    "id": 9,
-    "row_id": 92,
-    "action": "create",
-    "before_json": "null",
-    "after_json": "{\"id\": 92, \"product_id\": \"644\", \"product_name\": \"้ด้เ้ดก\", \"category\": \"ดิ\", \"unit_price_thb\": \"ดกิด\", \"source\": \"user-created\", \"updated_at\": \"2026-10-25T17:25:37.452883+00:00\", \"revision\": 1}",
-    "reason": "กดเดก",
-    "created_at": "2026-10-25T17:25:37.454889+00:00"
-  },
-  {
-    "id": 8,
-    "row_id": 91,
-    "action": "create",
-    "before_json": "null",
-    "after_json": "{\"id\": 91, \"product_id\": \"6515\", \"product_name\": \"บ้านผีสิง\", \"category\": \"Bathroom\", \"unit_price_thb\": \"9999999\", \"source\": \"user-created\", \"updated_at\": \"2026-10-25T17:24:05.533866+00:00\", \"revision\": 1}",
-    "reason": "อีซี่",
-    "created_at": "2026-10-25T17:24:05.534872+00:00"
-  },
-  {
-    "id": 7,
-    "row_id": 90,
-    "action": "create",
-    "before_json": "null",
-    "after_json": "{\"id\": 90, \"product_id\": \"4444\", \"product_name\": \"บ้านบอล\", \"category\": \"Bedding\", \"unit_price_thb\": \"150000000\", \"source\": \"user-created\", \"updated_at\": \"2026-10-25T17:23:15.151079+00:00\", \"revision\": 1}",
-    "reason": "ไม่มี",
-    "created_at": "2026-10-25T17:23:15.154702+00:00"
-  },
-  {
-    "id": 6,
+    "id": 5,
     "row_id": 81,
     "action": "update",
-    "before_json": "{\"id\": 81, \"product_id\": \"SKU-KT-104\", \"product_name\": \"Compact Rice Cooker\", \"category\": \"kitchen\", \"unit_price_thb\": \"1290\", \"source\": \"original\", \"updated_at\": \"2026-10-25T16:58:53.237536+00:00\", \"revision\": 1}",
-    "after_json": "{\"id\": 81, \"product_id\": \"SKU-KT-104\", \"product_name\": \"Compact Rice Cooker\", \"category\": \"Kitchen\", \"unit_price_thb\": \"1290\", \"source\": \"original\", \"updated_at\": \"2026-10-25T17:20:30.531922+00:00\", \"revision\": 2}",
+    "before_json": "{\"id\": 81, \"product_id\": \"SKU-KT-104\", \"product_name\": \"Compact Rice Cooker\", \"category\": \"kitchen\", \"unit_price_thb\": \"1290\", \"source\": \"original\", \"updated_at\": \"2026-10-26T09:17:24.784391+00:00\", \"revision\": 1}",
+    "after_json": "{\"id\": 81, \"product_id\": \"SKU-KT-104\", \"product_name\": \"Compact Rice Cooker\", \"category\": \"Kitchen\", \"unit_price_thb\": \"1290\", \"source\": \"original\", \"updated_at\": \"2026-10-26T09:17:24.798036+00:00\", \"revision\": 2}",
     "reason": "ปรับช่องว่างและหมวดหมู่ตามกฎ policy v1.0",
-    "created_at": "2026-10-25T17:20:30.531922+00:00"
-  },
-  {
-    "id": 5,
-    "row_id": 76,
-    "action": "update",
-    "before_json": "{\"id\": 76, \"product_id\": \"SKU-0076\", \"product_name\": \"BaanDee Item 76\", \"category\": \"bedding\", \"unit_price_thb\": \"499\", \"source\": \"original\", \"updated_at\": \"2026-10-25T16:58:53.237536+00:00\", \"revision\": 1}",
-    "after_json": "{\"id\": 76, \"product_id\": \"SKU-0076\", \"product_name\": \"BaanDee Item 76\", \"category\": \"Bedding\", \"unit_price_thb\": \"499\", \"source\": \"original\", \"updated_at\": \"2026-10-25T17:20:30.530921+00:00\", \"revision\": 2}",
-    "reason": "ปรับช่องว่างและหมวดหมู่ตามกฎ policy v1.0",
-    "created_at": "2026-10-25T17:20:30.530921+00:00"
+    "created_at": "2026-10-26T09:17:24.798036+00:00"
   },
   {
     "id": 4,
-    "row_id": 57,
+    "row_id": 76,
     "action": "update",
-    "before_json": "{\"id\": 57, \"product_id\": \"SKU-0057\", \"product_name\": \"BaanDee Item 57\", \"category\": \"bedding\", \"unit_price_thb\": \"299\", \"source\": \"original\", \"updated_at\": \"2026-10-25T16:58:53.237536+00:00\", \"revision\": 1}",
-    "after_json": "{\"id\": 57, \"product_id\": \"SKU-0057\", \"product_name\": \"BaanDee Item 57\", \"category\": \"Bedding\", \"unit_price_thb\": \"299\", \"source\": \"original\", \"updated_at\": \"2026-10-25T17:20:30.528949+00:00\", \"revision\": 2}",
+    "before_json": "{\"id\": 76, \"product_id\": \"SKU-0076\", \"product_name\": \"BaanDee Item 76\", \"category\": \"bedding\", \"unit_price_thb\": \"499\", \"source\": \"original\", \"updated_at\": \"2026-10-26T09:17:24.784391+00:00\", \"revision\": 1}",
+    "after_json": "{\"id\": 76, \"product_id\": \"SKU-0076\", \"product_name\": \"BaanDee Item 76\", \"category\": \"Bedding\", \"unit_price_thb\": \"499\", \"source\": \"original\", \"updated_at\": \"2026-10-26T09:17:24.795961+00:00\", \"revision\": 2}",
     "reason": "ปรับช่องว่างและหมวดหมู่ตามกฎ policy v1.0",
-    "created_at": "2026-10-25T17:20:30.528949+00:00"
+    "created_at": "2026-10-26T09:17:24.796487+00:00"
   },
   {
     "id": 3,
-    "row_id": 38,
+    "row_id": 57,
     "action": "update",
-    "before_json": "{\"id\": 38, \"product_id\": \"SKU-0038\", \"product_name\": \"BaanDee Item 38\", \"category\": \"kitchen\", \"unit_price_thb\": \"499\", \"source\": \"original\", \"updated_at\": \"2026-10-25T16:58:53.237536+00:00\", \"revision\": 1}",
-    "after_json": "{\"id\": 38, \"product_id\": \"SKU-0038\", \"product_name\": \"BaanDee Item 38\", \"category\": \"Kitchen\", \"unit_price_thb\": \"499\", \"source\": \"original\", \"updated_at\": \"2026-10-25T17:20:30.525841+00:00\", \"revision\": 2}",
+    "before_json": "{\"id\": 57, \"product_id\": \"SKU-0057\", \"product_name\": \"BaanDee Item 57\", \"category\": \"bedding\", \"unit_price_thb\": \"299\", \"source\": \"original\", \"updated_at\": \"2026-10-26T09:17:24.784391+00:00\", \"revision\": 1}",
+    "after_json": "{\"id\": 57, \"product_id\": \"SKU-0057\", \"product_name\": \"BaanDee Item 57\", \"category\": \"Bedding\", \"unit_price_thb\": \"299\", \"source\": \"original\", \"updated_at\": \"2026-10-26T09:17:24.793956+00:00\", \"revision\": 2}",
     "reason": "ปรับช่องว่างและหมวดหมู่ตามกฎ policy v1.0",
-    "created_at": "2026-10-25T17:20:30.526921+00:00"
+    "created_at": "2026-10-26T09:17:24.793956+00:00"
   },
   {
     "id": 2,
-    "row_id": 19,
+    "row_id": 38,
     "action": "update",
-    "before_json": "{\"id\": 19, \"product_id\": \"SKU-0019\", \"product_name\": \"BaanDee Item 19\", \"category\": \"storage\", \"unit_price_thb\": \"129\", \"source\": \"original\", \"updated_at\": \"2026-10-25T16:58:53.237536+00:00\", \"revision\": 1}",
-    "after_json": "{\"id\": 19, \"product_id\": \"SKU-0019\", \"product_name\": \"BaanDee Item 19\", \"category\": \"Storage\", \"unit_price_thb\": \"129\", \"source\": \"original\", \"updated_at\": \"2026-10-25T17:20:30.523309+00:00\", \"revision\": 2}",
+    "before_json": "{\"id\": 38, \"product_id\": \"SKU-0038\", \"product_name\": \"BaanDee Item 38\", \"category\": \"kitchen\", \"unit_price_thb\": \"499\", \"source\": \"original\", \"updated_at\": \"2026-10-26T09:17:24.784391+00:00\", \"revision\": 1}",
+    "after_json": "{\"id\": 38, \"product_id\": \"SKU-0038\", \"product_name\": \"BaanDee Item 38\", \"category\": \"Kitchen\", \"unit_price_thb\": \"499\", \"source\": \"original\", \"updated_at\": \"2026-10-26T09:17:24.791466+00:00\", \"revision\": 2}",
     "reason": "ปรับช่องว่างและหมวดหมู่ตามกฎ policy v1.0",
-    "created_at": "2026-10-25T17:20:30.524813+00:00"
+    "created_at": "2026-10-26T09:17:24.791466+00:00"
   },
   {
     "id": 1,
-    "row_id": 89,
-    "action": "create",
-    "before_json": "null",
-    "after_json": "{\"id\": 89, \"product_id\": \"5555\", \"product_name\": \"ควยปลอม\", \"category\": \"Kitchen\", \"unit_price_thb\": \"500\", \"source\": \"user-created\", \"updated_at\": \"2026-10-25T17:18:56.340608+00:00\", \"revision\": 1}",
-    "reason": "ไม่มี",
-    "created_at": "2026-10-25T17:18:56.342235+00:00"
+    "row_id": 19,
+    "action": "update",
+    "before_json": "{\"id\": 19, \"product_id\": \"SKU-0019\", \"product_name\": \"BaanDee Item 19\", \"category\": \"storage\", \"unit_price_thb\": \"129\", \"source\": \"original\", \"updated_at\": \"2026-10-26T09:17:24.784391+00:00\", \"revision\": 1}",
+    "after_json": "{\"id\": 19, \"product_id\": \"SKU-0019\", \"product_name\": \"BaanDee Item 19\", \"category\": \"Storage\", \"unit_price_thb\": \"129\", \"source\": \"original\", \"updated_at\": \"2026-10-26T09:17:24.789462+00:00\", \"revision\": 2}",
+    "reason": "ปรับช่องว่างและหมวดหมู่ตามกฎ policy v1.0",
+    "created_at": "2026-10-26T09:17:24.789462+00:00"
   }
 ]

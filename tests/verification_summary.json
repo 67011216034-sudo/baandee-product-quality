@@ -1,0 +1,69 @@
+{
+  "recorded_at": "2026-10-26T16:23:38+07:00",
+  "scope": "Local temporary-database tests and reproducible data pipeline; not full Cloud end-to-end testing",
+  "test_runs": [
+    {
+      "command": "python tests/test_system.py",
+      "test_methods": 10,
+      "result": "PASS",
+      "evidence": "tests/test_results.json"
+    },
+    {
+      "command": "python tests/test_auth.py",
+      "test_methods": 9,
+      "result": "PASS",
+      "evidence": "unittest run; hashing, session lifecycle, per-account persistence and validation"
+    },
+    {
+      "command": "python tests/test_streamlit.py",
+      "test_methods": 5,
+      "result": "PASS",
+      "evidence": "tests/streamlit_test_results.json"
+    }
+  ],
+  "total_test_methods_passed": 24,
+  "input_expected_actual_checks": {
+    "system_api": 24,
+    "streamlit": 12,
+    "all_pass": true
+  },
+  "original_raw_matches_teacher_zip": true,
+  "original_sha256": "2d2a12e8c33a829a4cf909685cd8c1feedf7f8929289f01b09751fd96cd81cd5",
+  "pipeline": {
+    "total": 88,
+    "status_before": {
+      "pass": 73,
+      "warning": 5,
+      "review": 6,
+      "error": 4
+    },
+    "status_after": {
+      "pass": 78,
+      "review": 6,
+      "error": 4
+    },
+    "corrected_rows": 5,
+    "issues_before": {
+      "CATEGORY_ALIAS": 5,
+      "UNKNOWN_CATEGORY": 5,
+      "MISSING_NAME": 1,
+      "INVALID_PRICE": 1,
+      "DUPLICATE_ID": 2,
+      "PRICE_REVIEW": 1
+    },
+    "issues_after": {
+      "UNKNOWN_CATEGORY": 5,
+      "MISSING_NAME": 1,
+      "INVALID_PRICE": 1,
+      "DUPLICATE_ID": 2,
+      "PRICE_REVIEW": 1
+    }
+  },
+  "cloud_verified": "Login/register screen observed 2026-10-26; Cloud account/CRUD not separately verified",
+  "human_items_pending": [
+    "member names and student IDs",
+    "actual roles and human review evidence",
+    "presentation appointment",
+    "final tag after team review"
+  ]
+}

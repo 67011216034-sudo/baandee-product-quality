@@ -1,0 +1,2 @@
+# Keep the teacher-provided raw file byte-for-byte on Windows and other systems.
+data/raw/** -text
