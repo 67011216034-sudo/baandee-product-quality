@@ -1,0 +1,109 @@
+{
+  "scope": "Launcher/setup and existing app suites from a copied folder with spaces; no browser automation; no live user database",
+  "recorded_at": "2026-10-26T21:03:35+07:00",
+  "first_setup": "Fresh .venv created and requirements installed successfully before these checks",
+  "checks": [
+    {
+      "case": "moved folder with spaces detects usable Python and dependencies",
+      "input": "start_streamlit.bat --check",
+      "expected": [
+        true,
+        false,
+        true
+      ],
+      "actual": [
+        true,
+        false,
+        true
+      ],
+      "result": "PASS"
+    },
+    {
+      "case": "missing Python gives recovery instructions without launching Store",
+      "input": "isolated environment without Python",
+      "expected": [
+        9009,
+        true,
+        true
+      ],
+      "actual": [
+        9009,
+        true,
+        true
+      ],
+      "result": "PASS"
+    },
+    {
+      "case": "repeat setup reuses isolated installation",
+      "input": "launch.py --setup-only",
+      "expected": [
+        0,
+        false
+      ],
+      "actual": [
+        0,
+        false
+      ],
+      "result": "PASS"
+    },
+    {
+      "case": "legacy launcher diagnostic exits without pause",
+      "input": "start.bat --check",
+      "expected": 0,
+      "actual": 0,
+      "result": "PASS"
+    },
+    {
+      "case": "local server starts from moved copy without browser",
+      "input": "launch.py --no-browser --port <free port>",
+      "expected": [
+        200,
+        200
+      ],
+      "actual": [
+        200,
+        200
+      ],
+      "result": "PASS"
+    },
+    {
+      "case": "fresh-environment test_system.py",
+      "input": "new venv; temporary DB",
+      "expected": [
+        0,
+        10
+      ],
+      "actual": [
+        0,
+        10
+      ],
+      "result": "PASS"
+    },
+    {
+      "case": "fresh-environment test_auth.py",
+      "input": "new venv; temporary DB",
+      "expected": [
+        0,
+        9
+      ],
+      "actual": [
+        0,
+        9
+      ],
+      "result": "PASS"
+    },
+    {
+      "case": "fresh-environment test_streamlit.py",
+      "input": "new venv; temporary DB",
+      "expected": [
+        0,
+        5
+      ],
+      "actual": [
+        0,
+        5
+      ],
+      "result": "PASS"
+    }
+  ]
+}

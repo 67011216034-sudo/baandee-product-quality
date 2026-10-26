@@ -8,6 +8,8 @@ https://baandee-quality-studio.streamlit.app/ — ตรวจหน้าเข
 
 ## เปิดระบบเวอร์ชัน Streamlit (หน้าจอหลักใหม่)
 
+สำหรับ ZIP บน Windows: แตกไฟล์ทั้งหมดแล้วดับเบิลคลิก **start_streamlit.bat** ตัวเปิดจะตรวจ Python ที่ใช้งานได้และติดตั้ง dependencies ใน `.venv` หากยังไม่มี ครั้งแรกต้องต่ออินเทอร์เน็ต หากไม่มี Python จะบอกวิธีติดตั้ง Python 3.12 และมี `open_online.url` สำหรับเปิดเว็บโดยไม่ต้องติดตั้ง ดู [GETTING_STARTED.md](GETTING_STARTED.md) สำหรับขั้นตอนและการแก้ข้อความ Python was not found
+
 ใช้ Python 3.10 ขึ้นไป เปิด terminal ในโฟลเดอร์นี้แล้วรัน:
 
 ```powershell
@@ -15,7 +17,7 @@ python -m pip install -r requirements.txt
 python -m streamlit run streamlit_app.py
 ```
 
-เปิด `http://localhost:8501` ในเบราว์เซอร์ ไม่ต้องมีบัญชีบนเว็บไซต์ Streamlit เพื่อรันบนเครื่อง ดับเบิลคลิก `start_streamlit.bat` ได้เมื่อติดตั้ง dependencies แล้ว สำหรับเครื่องที่สร้างงาน ไฟล์นี้ใช้ bundled Python และ runtime ในโฟลเดอร์ work ให้อัตโนมัติ
+เปิด `http://localhost:8501` ในเบราว์เซอร์ ไม่ต้องมีบัญชีบนเว็บไซต์ Streamlit เพื่อรันบนเครื่อง ตัวเปิด Windows ใช้ `launch.py` และตรวจ Python จริง ไม่พึ่งโฟลเดอร์ work ของเครื่องที่สร้างงาน ตรวจความพร้อมโดยไม่ติดตั้งหรือเปิดเบราว์เซอร์ได้ด้วย `start_streamlit.bat --check`
 
 Streamlit เริ่ม REST API บน loopback port ว่างให้อัตโนมัติเพียงหนึ่งตัวต่อ process หน้าจอเรียก API ผ่าน `streamlit_client.py` โดยใช้ cookie jar แยกต่อ browser session ไม่แชร์ session ของผู้ใช้ใน cache ส่วน SQLite อยู่ `data/products.sqlite3` ใช้บัญชี สินค้า และการตั้งค่าเดิมได้เมื่อรันบนเครื่องเดิม
 
@@ -143,6 +145,9 @@ streamlit_app.py                # หน้าจอหลัก Streamlit
 streamlit_client.py             # REST client แยก session ต่อผู้ใช้
 .streamlit/config.toml          # ธีมและค่าระบบ
 start_streamlit.bat             # เปิด Streamlit บน Windows
+launch.py                       # ตรวจและเตรียม dependencies แบบแยกใน .venv
+GETTING_STARTED.md              # เปิด ZIP / แก้ปัญหาไม่พบ Python
+open_online.url                 # เปิดเว็บ Cloud โดยไม่ต้องมี Python
 app.py                         # REST API, validation, SQLite, audit
 start.bat
 static/                        # HTML / CSS / JS; เรียก API ผ่าน fetch
@@ -152,6 +157,7 @@ data/generated/                # กฎใหม่และข้อมูล�
 data/cleaned/                   # clean, quarantine, before/after, audit
 tests/test_system.py
 tests/test_results.json         # input, expected, actual, pass/fail
+tests/launcher_test_results.json # หลักฐานตัวเปิดในโฟลเดอร์ที่ย้ายตำแหน่ง
 ```
 
 | หัวข้อในเกณฑ์ส่งงาน | อยู่ที่ใด |

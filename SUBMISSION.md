@@ -29,6 +29,7 @@
 | ทดสอบอย่างน้อยห้ากรณีพร้อม input/expected/actual/pass-fail | `tests/test_results.json`, `tests/streamlit_test_results.json` | ผ่าน 24 test methods; JSON มีหลักฐาน 36 checks |
 | API success/not found/unavailable | `tests/test_system.py`, `tests/test_streamlit.py` | ทดสอบแล้ว แม้หัวข้อสถานการณ์ API ในโจทย์ระบุ optional |
 | วิธีติดตั้งและ dependencies | `README.md`, `requirements.txt`, `.env.example` | มีคำสั่งรันและตัวแปรที่ใช้ |
+| เปิด ZIP บน Windows / กรณี Python ไม่อยู่ใน PATH | `start_streamlit.bat`, `launch.py`, `GETTING_STARTED.md` | ตรวจจากสำเนาในโฟลเดอร์ที่มีช่องว่าง ติดตั้ง .venv ใหม่และเปิด local server ได้; มีข้อความชัดเจนหากไม่พบ Python |
 | เปิดเผยการใช้ AI และการตัดสินใจของคน | `AI_USE.md` | มี disclosure; รอสมาชิกเติมผลทบทวนของตนตามจริง |
 | สมาชิก 3-4 คนและหลักฐานการแบ่งงาน | ตารางท้าย `README.md` และ `AI_USE.md` | มีชื่อ/รหัสครบ 4 คน ทีมแจ้งว่าร่วมพัฒนาเว็บไซต์; รอผลทบทวนรายบุคคล |
 | Tag/release `v1.0-final` | Git tag / GitHub release | รอทีมทบทวนเวอร์ชันสุดท้าย |
@@ -58,6 +59,8 @@ git push origin v1.0-final
 ## การตรวจสอบล่าสุดและขอบเขตหลักฐาน
 
 ผลรันวันที่ 26 ตุลาคม 2026: system/API 10 tests, auth/account 9 tests, Streamlit AppTest 5 tests ผ่านทั้งหมด ดู `tests/verification_summary.json` ผล test เป็นการทดสอบ local และฐานข้อมูลชั่วคราว ไม่ใช่การยืนยันทุกฟังก์ชันบน Cloud
+
+ตรวจตัวเปิดเพิ่มเติมจากสำเนาที่แยกจากโฟลเดอร์โครงการและใช้ `.venv` ที่ติดตั้งใหม่: ตรวจ Python, กรณีไม่พบ Python, setup ซ้ำ, ตัวเปิด legacy และ HTTP health/page ของ local server ผ่านทั้งหมด พร้อมรันซ้ำระบบ/API บัญชี และ Streamlit 24 test methods ผ่านใน environment ใหม่ ดู `tests/launcher_test_results.json` ไม่ได้ควบคุมหน้าจอหรือเปิดฐานข้อมูลบัญชีผู้ใช้จริงในการทดสอบนี้
 
 Cloud ตรวจพบหน้า login/register แล้ว บัญชี local ไม่ได้อัปโหลดขึ้น Cloud ต้องสมัครใหม่ ไฟล์ SQLite ของ Cloud ไม่รับประกันการคงอยู่หลัง reboot/redeploy ให้ดาวน์โหลด export และเตรียม local demo ไว้ การสาธิต local ทำได้โดยไม่พึ่ง Cloud เมื่อ dependencies ติดตั้งไว้แล้ว
 

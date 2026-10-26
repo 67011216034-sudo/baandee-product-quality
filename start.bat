@@ -1,14 +1,8 @@
 @echo off
-cd /d "%~dp0"
-if exist "%USERPROFILE%\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\python.exe" (
-  "%USERPROFILE%\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\python.exe" app.py
-  goto done
+rem Legacy HTML/API app. For the Streamlit UI use start_streamlit.bat.
+if "%~1"=="--check" (
+  call "%~dp0start_streamlit.bat" --check --legacy
+  exit /b
 )
-where py >nul 2>nul
-if %errorlevel%==0 (
-  py -3 app.py
-) else (
-  python app.py
-)
-:done
-pause
+call "%~dp0start_streamlit.bat" --legacy %*
+exit /b %errorlevel%

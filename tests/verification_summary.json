@@ -70,5 +70,11 @@
     "members": 4,
     "reported_role": "All members jointly develop the website",
     "presentation_appointment": "User reports already scheduled; date/time not provided"
+  },
+  "launcher_verification": {
+    "evidence": "tests/launcher_test_results.json",
+    "checks_passed": 8,
+    "existing_test_methods_rerun_passed": 24,
+    "scope": "moved folder with spaces; new isolated .venv; local server only; no browser automation"
   }
 }
