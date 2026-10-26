@@ -61,9 +61,14 @@
   },
   "cloud_verified": "Login/register screen observed 2026-10-26; Cloud account/CRUD not separately verified",
   "human_items_pending": [
-    "member names and student IDs",
-    "actual roles and human review evidence",
-    "presentation appointment",
+    "individual review evidence and decisions",
+    "repository URL submission through course channel",
     "final tag after team review"
-  ]
+  ],
+  "team_update": {
+    "source": "User-provided team details; not independently verified individual contribution",
+    "members": 4,
+    "reported_role": "All members jointly develop the website",
+    "presentation_appointment": "User reports already scheduled; date/time not provided"
+  }
 }
